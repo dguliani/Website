@@ -22,7 +22,7 @@ mainPage.application = (function()
     resizeView = function( e ) {
         var availableHeight = window.innerHeight;
 
-        container.style.height = availableHeight - headerBar.offsetHeight + 'px';
+        mainContainer.style.height = availableHeight - headerBar.offsetHeight + 'px';
     }
     
 
