@@ -31,10 +31,11 @@ h1{
 
 #header_title {
     width:100%;
-    color: rgb(0, 78, 163);
+    color: rgb(0, 51, 107);
     text-align: center;
     font-style: normal;
     font-size: 45px;
+    font-family: Georgia;
 }
 .photo,
 #header_content {
@@ -60,19 +61,6 @@ h1{
     color:white;
     font-style:italic;
     font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#cover {
-    text-align: center;
-    height:100%;
-    background-color: beige;
-}
-
-#cover_photo {
-    width:100%;
-    background-color:  rgb(7, 73, 143);    
-    height:385px;
-    box-shadow: inset -5px -5px 50px;
 }
 
 #nav_bar {
@@ -107,6 +95,72 @@ h1{
     margin:15px 0;
 }
 
+/*---------------BODY------------------*/
+
+
+
+#body_container {
+    text-align: center;
+    height: 100%;
+    background-color: white;
+}
+
+#cover_inner {
+    width:100%;
+    background-color:  rgb(7, 73, 143);    
+    height:385px;
+    box-shadow: inset -5px -5px 50px;
+}
+#skills_row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 360px;
+    text-align: center;
+}
+.skills {
+    display: inline-block;
+    width:250px;
+    margin-left: 20px;
+    height: 360px;
+}
+
+.skills_image {
+    height:120px;
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.skill_title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    color: black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.skill_summary {
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    color: black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#balanced {
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*------------FOOTER----------------*/
+
+#bottom_nav {
+    width:100%;
+    height: 90px;
+    background-color:  rgb(7, 73, 143);  
+}
 /*---------------TOPNAV---------------
 #main_container {
 	width: 100%;
