@@ -1,0 +1,25 @@
+/*---------------GLOBAL--------------*/
+html, body {
+	height: 100%;
+	width: 100%;
+	padding:none;
+	margin: 0px;
+}
+
+h1{
+    line-height: 2em;
+    margin: 0;
+    display:inline-block;
+    font-style:italic;
+    color:black;
+    padding-left:15px;
+    font-family:Marigold;
+}
+
+/*-----------BOTTOMNAV---------------*/
+.contact_links {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    z-index: 8;
+}
