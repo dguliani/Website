@@ -16,10 +16,109 @@ h1{
     font-family:Marigold;
 }
 
-/*-----------BOTTOMNAV---------------*/
+/*----------TOPNAV and HEADER ---------*/
+#header {
+    height:150px;
+    width:100%;
+    background-color: white;
+    -moz-box-shadow:    1px 2px 1px 0px black;
+    -webkit-box-shadow: 1px 2px 1px 0px black;
+    box-shadow:         1px 2px 1px 0px black;
+}
+    .topnav:hover {
+        opacity:1;
+        text-decoration: none;
+    }
+
+#header_title {
+    width:100%;
+    color: rgb( 13, 83, 122 );
+    text-align: center;
+    font-style: normal;
+    font-size: 45px;
+    font-family: Georgia;
+}
+.photo,
+#header_content {
+    display:inline-block;
+}
+.photo {
+    height:150px;
+    width:200px;
+    float:left;
+    position:absolute;
+    text-align: center;
+    z-index: 4
+}
+#header_content {
+    width: 100%;
+}
+#slogan{
+    opacity:0.7;
+    text-align: center;
+    display:block;
+    margin-top:0px;
+    margin-bottom: 8px;
+    color:white;
+    font-style:italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*#nav_bar {
+    display:block;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.topnav {
+    color: rgb(0, 78, 163);
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}*/
+
+#my_photo {
+    border-radius: 50px;
+    width:100px;
+    margin:20px 0;
+}
+/*-----------PersonalLinks---------------*/
+
+#personal_links {
+    display:block;
+    text-align: center;
+    margin: 0px auto;
+    padding:none;
+    width: 100%;
+}
 .contact_links {
-    width: 64px;
-    height: 64px;
+    width: 45px;
+    height: 45px;
     display: inline-block;
     z-index: 8;
+    opacity: 0.7;
+}
+    .contact_links:hover { 
+        opacity: 1;
+    }
+
+#facebook {
+    background:url("../images/facebook.png");
+}
+
+#linkedin { 
+    background:url("../images/linkedin.png");
+}
+
+#twitter {
+    background:url("../images/twitter.png");
+}
+
+#github { 
+    background:url("../images/github.png");
 }

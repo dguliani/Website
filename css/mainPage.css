@@ -1,83 +1,15 @@
 
 /*--------------HEADER----------------*/
-#header {
-    height:130px;
-    width:100%;
-    background-color: white;
-    -moz-box-shadow:    1px 2px 1px 0px black;
-  	-webkit-box-shadow: 1px 2px 1px 0px black;
-  	box-shadow:         1px 2px 1px 0px black;
-}
-    .topnav:hover {
-        opacity:1;
-        text-decoration: none;
-    }
-
-#header_title {
-    width:100%;
-    color: rgb(0, 51, 107);
-    text-align: center;
-    font-style: normal;
-    font-size: 45px;
-    font-family: Georgia;
-}
-.photo,
-#header_content {
-    display:inline-block;
-}
-.photo {
-    height:150px;
-    width:200px;
-    float:left;
-    position:absolute;
-    text-align: center;
-    z-index: 4
-}
-#header_content {
-    width: 100%;
-}
-#slogan{
-    opacity:0.7;
-    text-align: center;
-    display:block;
-    margin-top:0px;
-    margin-bottom: 8px;
-    color:white;
-    font-style:italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#nav_bar {
-    display:block;
-    text-align: center;
-    margin: 0px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-
-}
-
-.topnav {
-    color: rgb(0, 78, 163);
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#header a {
-    opacity:0.75;
+#home_nav { 
+    background-color: rgb( 0, 78, 163 );
+    color: white;
+    border-radius: 4px;
+    opacity: 1;
 }
     #header a:hover {
         opacity:1;
         text-decoration: none;
     }
-#my_photo {
-    border-radius: 50px;
-    width:100px;
-    margin:15px 0;
-}
 
 /*---------------BODY------------------*/
 
@@ -94,9 +26,44 @@
 
 #cover_inner {
     width:100%;
-    background-color:  rgb(7, 73, 143);    
+    background-color:  rgb( 61, 61, 61 );    
     height:385px;
-    box-shadow: inset -5px -5px 50px;
+    box-shadow: inset 0px -1px 13px;
+
+}
+#cover_header {
+    margin-top: 0;
+    color:white;
+    padding-top: 60px;
+    font-family: papyrus;
+    font-size:2.2em;
+}
+#cover_text {
+    width: 600px;
+    margin: auto;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em;
+    padding-bottom: 30px;
+}
+.slider_button {
+    display: inline-block;
+    padding: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border: none;
+    box-shadow: 2px 2px 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 13px;
+}
+    .slider_button:hover {
+        opacity:0.9;
+    }
+#left_button {
+    background-color: white;
+}
+#right_button {
+    background-color: white;
 }
 #skills_row {
     padding-top: 50px;
@@ -116,7 +83,8 @@
     width: 120px;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    opacity: 0.7;
 }
 
 .skill_title {
@@ -148,19 +116,18 @@
     height: 90px;
     position: absolute;
     bottom:0;
-    background-color:  rgb(7, 73, 143);  
 }
 
-/*-------------TESTPAGES----------------*/
+/*-------------SLIDER PAGES----------------*/
 
-#test_page {
+.slide {
   position: absolute;
-  background-color: rgb(32, 148, 240);
-  box-shadow: inset -5px -5px 50px;
+  box-shadow: inset 0px -1px 13px;
   height:385px;
   -webkit-transition: left 0.5s; 
 }
-#test_inner {
+
+#left_inner {
     background-color: #FC722D;
     display:inline-block;
 }
@@ -175,6 +142,12 @@
     left: 0px;
 }
 
+#left_slider,
+#right_slider,
+#cover_inner,
+#bottom_nav {
+    background-color: rgb( 13, 83, 122 );
+}
 /*---------------TOPNAV---------------
 #main_container {
 	width: 100%;

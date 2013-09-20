@@ -1,0 +1,74 @@
+
+/*--------------HEADER----------------*/
+
+#interests_nav { 
+    background-color: rgb( 0, 78, 163 );
+    color: white;
+    border-radius: 4px;
+    opacity: 1;
+}
+  #header a:hover {
+        opacity:1;
+        text-decoration: none;
+    }
+
+
+/*---------------BODY------------------*/
+
+#main_container {
+    min-height: 100%;
+    position: relative;
+}
+
+#body_container {
+    text-align: center;
+    min-height: 100%;
+    background-color: white;
+}
+.interest_row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 360px;
+    text-align: center;
+}
+#tech_row {
+    background-color: rgba( 197, 197, 197, 0.34 );
+    border-bottom: 2px solid rgb( 197, 196, 196);
+}
+#spokenword_row {
+    background-color: white;    
+}
+#fitness_row {
+    background-color: rgba( 197, 197, 197, 0.34 );
+    border-top: 2px solid rgb( 197, 196, 196);  
+}
+#photography_row {
+    background-color: white;    
+    border-top: 2px solid rgb( 197, 196, 196);  
+}
+
+.interest_heading {
+    font-family:Georgia;
+    color: rgb(79, 140, 207);
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 100px;
+}
+#balanced {
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*------------FOOTER----------------*/
+
+#bottom_nav {
+    width:100%;
+    height: 90px;
+    position: absolute;
+    bottom:0;
+    background-color:  rgb(7, 73, 143);  
+}
+

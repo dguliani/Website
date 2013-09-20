@@ -13,40 +13,76 @@ mainPage.application = (function()
     //elements
     mainContainer,
     headerBar,
+    leftSlider,
+    rightSlider,
 
     //functions
     resizeView;
       
     onClick = function( e ) 
     {
-        var target = e.target;
+        var target = e.target,
+            parentSlider;
 
-        if( dom.HTML.hasClass( target, "slide" ) ) {
-            if( dom.HTML.hasClass( target, "animate" ) ) {
-                dom.HTML.removeClass( target, "animate" );
-                target.style.left = '-' + tabLeft + 'px';
-            } else {
-                dom.HTML.addClass( target, "animate" );
-                target.style.left = 0;
+        if( dom.HTML.hasClass( target, "slider_button" ) ) {
+            if( target.id === "left_button" ) {
+                    dom.HTML.addClass( leftSlider, "animate" );
+                    leftSlider.style.left = 0;
+            } else if( target.id === "right_button" ) {
+                    dom.HTML.addClass( rightSlider, "animate" );
+                    rightSlider.style.left = 0;
             }
         }
+        parentSlider = getParentByClassName( target, "slide" );
+        if( parentSlider ) {
+            if( parentSlider === leftSlider ) {
+                dom.HTML.removeClass( leftSlider, "animate" );
+                leftSlider.style.left = '-' + tabLeft + 'px';
+            } else if( parentSlider === rightSlider ) {
+                dom.HTML.removeClass( rightSlider, "animate" );
+                rightSlider.style.left = tabLeft + 'px';
+            }
+        }
+        //will need to check parent
+       /* if( dom.HTML.hasClass( target, 'slide' ) ) {
+            dom.HTML.removeClass( target, 'animate' );
+            if( target.)
+
+            if( dom.HTML.hasClass( leftSlider, "animate" ) ) {
+                dom.HTML.removeClass( leftSlider, "animate" );
+                leftSlider.style.left = '-' + tabLeft + 'px';
+        }*/
 
     };
 
-  /*  getParentByClassName = function( element, className ) 
+    getParentByClassName = function( element, className ) 
     {
-        while( dom.HTML.hasClass( ))
-    };*/
+        while( !dom.HTML.hasClass( element, className ) && !dom.HTML.hasClass( element, "main_page" ) ) {
+            element = element.parent;
+        }
+        if( dom.HTML.hasClass( element, className ) ) {
+            return element;
+        }
+        return null; 
+    };
       
     resizeView = function( e ) {
+        // need to resize the cover text container as well
+
         var availableHeight = window.innerHeight,
             bodyHeight = bodyContainer.offsetHeight,
             bodyWidth = bodyContainer.offsetWidth;
-            tabLeft = bodyWidth - 20;
+            tabLeft = bodyWidth;
 
-        testPage.style.left = '-' + tabLeft + 'px';
-        //testPage.style.height = bodyHeight + 'px';
-        testPage.style.width = bodyWidth + 'px';
+        if( !dom.HTML.hasClass( leftSlider, 'animate' ) ) {
+            leftSlider.style.left = '-' + tabLeft + 'px';    
+        }
+        if( !dom.HTML.hasClass( rightSlider, 'animate' ) ) {
+            rightSlider.style.left = tabLeft + 'px';    
+        }
+
+        leftSlider.style.width = bodyWidth + 'px';
+        rightSlider.style.width = bodyWidth + 'px';
         
 
        // mainContainer.style.minHeight = 100 + '%';
@@ -55,10 +91,11 @@ mainPage.application = (function()
 
     application.initialize = function()
     {
-        mainContainer = $('main_container');
+        mainContainer = $( 'main_container' );
         bodyContainer = $( 'body_container' );
-        headerBar = $('header');
-        testPage = $( 'test_page' );
+        headerBar = $( 'header' );
+        leftSlider = $( 'left_slider' );
+        rightSlider = $( 'right_slider' );
 
         console.log("initializing");
 
