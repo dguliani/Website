@@ -27,31 +27,21 @@ mainPage.application = (function()
         if( dom.HTML.hasClass( target, "slider_button" ) ) {
             if( target.id === "left_button" ) {
                     dom.HTML.addClass( leftSlider, "animate" );
-                    leftSlider.style.left = 0;
+                  //  leftSlider.style.left = 0;
             } else if( target.id === "right_button" ) {
                     dom.HTML.addClass( rightSlider, "animate" );
-                    rightSlider.style.left = 0;
             }
         }
         parentSlider = getParentByClassName( target, "slide" );
         if( parentSlider ) {
             if( parentSlider === leftSlider ) {
                 dom.HTML.removeClass( leftSlider, "animate" );
-                leftSlider.style.left = '-' + tabLeft + 'px';
+                //leftSlider.style.left = '-' + tabLeft + 'px';
             } else if( parentSlider === rightSlider ) {
                 dom.HTML.removeClass( rightSlider, "animate" );
-                rightSlider.style.left = tabLeft + 'px';
+               // rightSlider.style.left = tabLeft + 'px';
             }
         }
-        //will need to check parent
-       /* if( dom.HTML.hasClass( target, 'slide' ) ) {
-            dom.HTML.removeClass( target, 'animate' );
-            if( target.)
-
-            if( dom.HTML.hasClass( leftSlider, "animate" ) ) {
-                dom.HTML.removeClass( leftSlider, "animate" );
-                leftSlider.style.left = '-' + tabLeft + 'px';
-        }*/
 
     };
 
@@ -74,12 +64,9 @@ mainPage.application = (function()
             bodyWidth = bodyContainer.offsetWidth;
             tabLeft = bodyWidth;
 
-        if( !dom.HTML.hasClass( leftSlider, 'animate' ) ) {
-            leftSlider.style.left = '-' + tabLeft + 'px';    
-        }
-        if( !dom.HTML.hasClass( rightSlider, 'animate' ) ) {
-            rightSlider.style.left = tabLeft + 'px';    
-        }
+    //    if( !dom.HTML.hasClass( leftSlider, 'animate' ) ) {
+      //      leftSlider.style.left = '-' + tabLeft + 'px';    
+        //}
 
         leftSlider.style.width = bodyWidth + 'px';
         rightSlider.style.width = bodyWidth + 'px';
@@ -88,6 +75,14 @@ mainPage.application = (function()
        // mainContainer.style.minHeight = 100 + '%';
     };
     
+    initializeSliders = function() {
+
+        console.log( "initializing sliders" );
+
+        rightSlider.style.display = "block";
+        leftSlider.style.display = "block";
+    };
+
 
     application.initialize = function()
     {
@@ -97,12 +92,13 @@ mainPage.application = (function()
         leftSlider = $( 'left_slider' );
         rightSlider = $( 'right_slider' );
 
-        console.log("initializing");
+        console.log( "initializing" );
 
         window.onclick = onClick;
         window.onresize = resizeView;
         resizeView();
 
+        initializeSliders();
 
     };
 

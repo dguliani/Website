@@ -1,9 +1,12 @@
 /*---------------GLOBAL--------------*/
+
 html, body {
 	height: 100%;
 	width: 100%;
 	padding:none;
 	margin: 0px;
+    overflow-x: hidden;
+
 }
 
 h1{

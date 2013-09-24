@@ -1,18 +1,8 @@
-var dom;
-if( !dom ) {
-	dom = {};
-}
-
-Object.create = function( baseObject )
-{
-	var NewObject = function() {};
-	NewObject.prototype= baseObject;
-	return new NewObject();
-};
+var dom = dom || {};
 
 dom.HTML = ( function() {
 
-	var HTML = Object.create( dom.XML );
+	var HTML = {};
 
 	HTML.hasClass = function( element, className ) 
 	{

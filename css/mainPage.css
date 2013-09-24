@@ -124,7 +124,7 @@
   position: absolute;
   box-shadow: inset 0px -1px 13px;
   height:385px;
-  -webkit-transition: left 0.5s; 
+  display:none;
 }
 
 #left_inner {
@@ -132,16 +132,26 @@
     display:inline-block;
     text-align: center;
 }
-/*#test_tab {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-color: #FC722D;
-    display: inline-block;
-}*/
+#left_slider {
+    right: auto;
+    left: 0;
+    -webkit-transform:translate3d( -105%, 0, 0 );
+    -webkit-transition-duration: .5s;
 
-#test_page.animate { 
-    left: 0px;
 }
+    #left_slider.animate {
+        -webkit-transform:translate3d( 0, 0, 0 );
+    }
+
+#right_slider {
+    right: 0;
+    left: auto;
+    -webkit-transform:translate3d( 105%, 0, 0 );
+    -webkit-transition-duration: .5s;
+}
+    #right_slider.animate {
+        -webkit-transform:translate3d( 0, 0, 0 );
+    }
 
 #left_slider,
 #right_slider,
