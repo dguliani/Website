@@ -58,7 +58,7 @@ mainPage.application = (function()
     getParentByClassName = function( element, className ) 
     {
         while( !dom.HTML.hasClass( element, className ) && !dom.HTML.hasClass( element, "main_page" ) ) {
-            element = element.parent;
+            element = element.parentElement;
         }
         if( dom.HTML.hasClass( element, className ) ) {
             return element;

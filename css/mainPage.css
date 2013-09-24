@@ -59,9 +59,7 @@
     .slider_button:hover {
         opacity:0.9;
     }
-#left_button {
-    background-color: white;
-}
+#left_button,
 #right_button {
     background-color: white;
 }
@@ -150,6 +148,20 @@
 #cover_inner,
 #bottom_nav {
     background-color: rgb( 13, 83, 122 );
+}
+/*--------------NARROW SCREEN-----------*/
+@media only screen 
+and ( max-width: 840px ) {
+    .skills {
+        margin: auto;
+        display: block;
+    }
+    #skills_row {
+        height: 1080px;
+    }
+    .projects {
+        display:none;
+    }
 }
 /*---------------TOPNAV---------------
 #main_container {
