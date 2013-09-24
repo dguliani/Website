@@ -18,7 +18,7 @@ h1{
 
 /*----------TOPNAV and HEADER ---------*/
 #header {
-    height:150px;
+    height:165px;
     width:100%;
     background-color: white;
     -moz-box-shadow:    1px 2px 1px 0px black;
@@ -35,8 +35,8 @@ h1{
     color: rgb( 13, 83, 122 );
     text-align: center;
     font-style: normal;
-    font-size: 45px;
-    font-family: Georgia;
+    font-size: 3.3em;
+    font-family: 'Averia Serif Libre', cursive;
 }
 .photo,
 #header_content {
@@ -85,7 +85,8 @@ h1{
 #my_photo {
     border-radius: 50px;
     width:100px;
-    margin:20px 0;
+    margin:24px 0;
+    display: none;
 }
 /*-----------PersonalLinks---------------*/
 
