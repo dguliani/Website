@@ -34,7 +34,7 @@
 #cover_header {
     margin-top: 0;
     color:white;
-    padding-top: 45px;
+    padding-top: 60px;
     font-family: 'Averia Serif Libre', cursive;
     font-size:2em;
 }
@@ -58,6 +58,9 @@
 }
     .slider_button:hover {
         opacity:0.9;
+    }
+    .show_slider .slider_button {
+        display:none;
     }
 #left_button,
 #right_button {
@@ -125,6 +128,7 @@
   box-shadow: inset 0px -1px 13px;
   height:385px;
   display:none;
+  text-align: center;
 }
 
 #left_inner {

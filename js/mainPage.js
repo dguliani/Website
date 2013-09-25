@@ -13,6 +13,7 @@ mainPage.application = (function()
     //elements
     mainContainer,
     headerBar,
+    coverInner,
     leftSlider,
     rightSlider,
 
@@ -27,20 +28,19 @@ mainPage.application = (function()
         if( dom.HTML.hasClass( target, "slider_button" ) ) {
             if( target.id === "left_button" ) {
                     dom.HTML.addClass( leftSlider, "animate" );
-                  //  leftSlider.style.left = 0;
             } else if( target.id === "right_button" ) {
                     dom.HTML.addClass( rightSlider, "animate" );
             }
+            dom.HTML.addClass( coverInner, "show_slider" ); 
         }
         parentSlider = getParentByClassName( target, "slide" );
         if( parentSlider ) {
             if( parentSlider === leftSlider ) {
                 dom.HTML.removeClass( leftSlider, "animate" );
-                //leftSlider.style.left = '-' + tabLeft + 'px';
             } else if( parentSlider === rightSlider ) {
                 dom.HTML.removeClass( rightSlider, "animate" );
-               // rightSlider.style.left = tabLeft + 'px';
             }
+            dom.HTML.removeClass( coverInner, "show_slider" );
         }
 
     };
@@ -88,6 +88,7 @@ mainPage.application = (function()
     {
         mainContainer = $( 'main_container' );
         bodyContainer = $( 'body_container' );
+        coverInner = $( 'cover_inner' );
         headerBar = $( 'header' );
         leftSlider = $( 'left_slider' );
         rightSlider = $( 'right_slider' );
