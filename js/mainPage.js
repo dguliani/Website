@@ -18,7 +18,9 @@ mainPage.application = (function()
     rightSlider,
 
     //functions
-    resizeView;
+    resizeView,
+    getParentByClassName,
+    initializeSliders;
       
     onClick = function( e ) 
     {
@@ -57,22 +59,16 @@ mainPage.application = (function()
     };
       
     resizeView = function( e ) {
-        // need to resize the cover text container as well
 
         var availableHeight = window.innerHeight,
             bodyHeight = bodyContainer.offsetHeight,
             bodyWidth = bodyContainer.offsetWidth;
             tabLeft = bodyWidth;
 
-    //    if( !dom.HTML.hasClass( leftSlider, 'animate' ) ) {
-      //      leftSlider.style.left = '-' + tabLeft + 'px';    
-        //}
-
         leftSlider.style.width = bodyWidth + 'px';
         rightSlider.style.width = bodyWidth + 'px';
-        
 
-       // mainContainer.style.minHeight = 100 + '%';
+        //TODO change the inner html of elements that require it when size is too large or small
     };
     
     initializeSliders = function() {
@@ -112,6 +108,4 @@ var $ = function( elementID )
 };
 
 // This line starts the application
-// It should be the last line in the last javascript file for this project
-
 window.addEventListener( "DOMContentLoaded", mainPage.application.initialize, true )

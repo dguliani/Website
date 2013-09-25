@@ -72,12 +72,19 @@
     height: 360px;
     text-align: center;
 }
-.projects,
+
 .skills {
     display: inline-block;
     width:250px;
     margin-left: 20px;
     height: 360px;
+}
+
+.projects {
+    height: 385px;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
 }
 
 .skills_image {
@@ -127,14 +134,18 @@
   position: absolute;
   box-shadow: inset 0px -1px 13px;
   height:385px;
+  max-height: 385px;
   display:none;
   text-align: center;
 }
-
+#right_inner,
 #left_inner {
     background-color: rgb( 13, 83, 122 );
-    display:inline-block;
+    display:block;
     text-align: center;
+    max-height: 385px;
+    width: 100%;
+    box-shadow: inset 0px -1px 13px;
 }
 #left_slider {
     right: auto;
@@ -162,6 +173,13 @@
 #cover_inner,
 #bottom_nav {
     background-color: rgb( 13, 83, 122 );
+}
+
+.project_image {
+    width: 200px;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 /*--------------NARROW SCREEN-----------*/
 @media only screen 
