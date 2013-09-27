@@ -81,10 +81,13 @@
 }
 
 .projects {
-    height: 385px;
+    height: 335px;
     display: inline-block;
     vertical-align: top;
     width: 250px;
+    margin: 25px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px inset;
 }
 
 .skills_image {
@@ -144,6 +147,7 @@
     display:block;
     text-align: center;
     max-height: 385px;
+    height: 385px;
     width: 100%;
     box-shadow: inset 0px -1px 13px;
 }
