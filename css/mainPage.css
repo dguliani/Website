@@ -38,6 +38,7 @@
     font-family: 'Averia Serif Libre', cursive;
     font-size:2em;
 }
+.project_text,
 #cover_text {
     width: 600px;
     margin: auto;
@@ -46,6 +47,14 @@
     font-size: 1em;
     padding-bottom: 30px;
 }
+
+.project_header {
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: auto;
+    font-size: 22px;
+}
+
 .slider_button {
     display: inline-block;
     padding: 10px;

@@ -7,8 +7,9 @@ mainPage.application = (function()
 {
     var application = {},
 
-    //values
+    //variables
     tabLeft,
+    firstClick,
 
     //elements
     mainContainer,
@@ -28,6 +29,7 @@ mainPage.application = (function()
             parentSlider;
 
         if( dom.HTML.hasClass( target, "slider_button" ) ) {
+           
             if( target.id === "left_button" ) {
                     dom.HTML.addClass( leftSlider, "animate" );
             } else if( target.id === "right_button" ) {
@@ -77,6 +79,7 @@ mainPage.application = (function()
 
         rightSlider.style.display = "block";
         leftSlider.style.display = "block";
+
     };
 
 
@@ -91,12 +94,15 @@ mainPage.application = (function()
 
         console.log( "initializing" );
 
+        firstClick = true;
+
         window.onclick = onClick;
         window.onresize = resizeView;
         resizeView();
 
-        initializeSliders();
-
+        window.setTimeout( function() {
+            initializeSliders();
+        }, 500);
     };
 
     return application;
