@@ -19,6 +19,9 @@ h1{
     font-family:Marigold;
 }
 
+li {
+    text-align: left; 
+}
 /*----------TOPNAV and HEADER ---------*/
 #header {
     height:165px;

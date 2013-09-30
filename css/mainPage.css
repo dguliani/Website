@@ -38,7 +38,7 @@
     font-family: 'Averia Serif Libre', cursive;
     font-size:2em;
 }
-.project_text,
+
 #cover_text {
     width: 600px;
     margin: auto;
@@ -46,6 +46,14 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 1em;
     padding-bottom: 30px;
+}
+
+.project_text {
+    color:white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em;
+    padding-bottom: 30px;
+    padding-right: :20px;
 }
 
 .project_header {
@@ -194,9 +202,9 @@
     margin-right: auto;
     margin-left: auto;
 }
-/*--------------NARROW SCREEN-----------*/
+/*--------------MID-SIZE VIEW-----------*/
 @media only screen 
-and ( max-width: 840px ) {
+and ( max-width: 850px ) {
     .skills {
         margin: auto;
         display: block;
@@ -207,6 +215,11 @@ and ( max-width: 840px ) {
     .projects {
         display:none;
     }
+}
+/*-----------NARROW VIEW---------------*/
+
+@media screen and ( max-width: 640px ) {
+    
 }
 /*---------------TOPNAV---------------
 #main_container {
