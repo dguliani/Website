@@ -20,7 +20,7 @@
 
 #body_container {
     text-align: center;
-    min-height: 100%;
+    min-height: 700%;
     background-color: white;
 }
 
@@ -40,7 +40,7 @@
 }
 
 #cover_text {
-    width: 600px;
+    width: 75%;
     margin: auto;
     color: white;
     font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
@@ -65,6 +65,7 @@
     font-size: 22px;
 }
 
+#middle_button,
 .slider_button {
     display: inline-block;
     padding: 10px;
@@ -78,9 +79,19 @@
     .slider_button:hover {
         opacity:0.9;
     }
+
     .show_slider .slider_button {
         display:none;
     }
+
+    #middle_button {
+        background-color: rgb(68, 238, 245);
+    }
+
+    #middle_button:hover {
+        opacity: 0.9;
+    }
+    
 #left_button,
 #right_button {
     background-color: white;
@@ -214,6 +225,10 @@ and ( max-width: 850px ) {
     #skills_row {
         height: 1080px;
     }
+
+    #cover_text {
+        width: 75%;
+    }
     .projects {
         display:none;
     }
@@ -221,7 +236,7 @@ and ( max-width: 850px ) {
 /*-----------NARROW VIEW---------------*/
 
 @media screen and ( max-width: 640px ) {
-    
+
 }
 /*---------------TOPNAV---------------
 #main_container {
