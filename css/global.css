@@ -18,8 +18,12 @@ h1{
     padding-left:15px;
     font-family:Marigold;
 }
+h2 {
+    font-weight: lighter;
+}
 
 li {
+    padding-top: 13px;
     text-align: left; 
 }
 /*----------TOPNAV and HEADER ---------*/

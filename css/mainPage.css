@@ -35,7 +35,7 @@
     margin-top: 0;
     color:white;
     padding-top: 60px;
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size:2em;
 }
 
@@ -46,6 +46,7 @@
     font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
     font-size: 1em;
     padding-bottom: 30px;
+    font-weight: lighter;
 }
 
 .project_text {
@@ -53,7 +54,8 @@
     font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
     font-size: 1em;
     padding-bottom: 30px;
-    padding-right: :20px;
+    padding-right: 20px;
+    font-weight: lighter;
 }
 
 .project_header {

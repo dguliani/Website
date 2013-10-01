@@ -75,10 +75,15 @@ mainPage.application = (function()
     
     initializeSliders = function() {
 
+        var bodyWidth = bodyContainer.offsetWidth;
+
         console.log( "initializing sliders" );
 
         rightSlider.style.display = "block";
+        rightSlider.style.width = bodyWidth + 'px';
+
         leftSlider.style.display = "block";
+        leftSlider.style.width = bodyWidth + 'px';
 
     };
 
