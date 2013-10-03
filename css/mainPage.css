@@ -20,7 +20,7 @@
 
 #body_container {
     text-align: center;
-    min-height: 700%;
+    min-height: 100%;
     background-color: white;
 }
 
@@ -29,6 +29,7 @@
     background-color:  rgb( 61, 61, 61 );    
     height:385px;
     box-shadow: inset 0px -1px 13px;
+    background-image:url('../images/background_pattern.png');
 
 }
 #cover_header {
@@ -40,7 +41,7 @@
 }
 
 #cover_text {
-    width: 75%;
+    width: 700px;
     margin: auto;
     color: white;
     font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
@@ -159,6 +160,7 @@
     position: absolute;
     bottom:0;
     box-shadow: inset 0px -1px 13px;
+    background-image:url('../images/background_pattern.png');
 }
 
 /*-------------SLIDER PAGES----------------*/
@@ -174,6 +176,7 @@
 #right_inner,
 #left_inner {
     background-color: rgb( 13, 83, 122 );
+    background-image:url('../images/background_pattern.png');
     display:block;
     text-align: center;
     max-height: 385px;
