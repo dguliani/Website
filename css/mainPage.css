@@ -84,15 +84,14 @@
     .show_slider .slider_button {
         display:none;
     }
-
-    #middle_button {
-        background-color: rgb(68, 238, 245);
+    .show_slider #middle_button {
+        display:none;
     }
 
     #middle_button:hover {
         opacity: 0.9;
     }
-    
+#middle_button,
 #left_button,
 #right_button {
     background-color: white;
@@ -218,9 +217,32 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+/*----------MID_SMALL SIZE SLIDER--------*/
+.projects_small {
+    display : none;
+    width: 75%;
+    margin:auto;
+    padding-top: 30px;
+}
+.projects_small_header {
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: auto;
+    font-size: 22px;
+}
+.projects_small_text {
+    color:white;
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+}
 /*--------------MID-SIZE VIEW-----------*/
 @media only screen 
 and ( max-width: 850px ) {
+    .projects_small {
+        display: block;
+    }
     .skills {
         margin: auto;
         display: block;
@@ -239,7 +261,9 @@ and ( max-width: 850px ) {
 /*-----------NARROW VIEW---------------*/
 
 @media screen and ( max-width: 640px ) {
-
+    .projects_small {
+        padding-top: 20px;
+    }
 }
 /*---------------TOPNAV---------------
 #main_container {
