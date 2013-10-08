@@ -61,6 +61,7 @@
 
 .project_header {
     color: white;
+    padding-top: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     margin: auto;
     font-size: 22px;
@@ -119,7 +120,6 @@
     border-radius: 10px;
     box-shadow: 0px 1px 20px inset;
 }
-
 .skills_image {
     height:120px;
     width: 120px;
@@ -186,21 +186,33 @@
 #left_slider {
     right: auto;
     left: 0;
+    -transform:translate3d( -105%, 0, 0 );
+    -transition-duration: 0.5s;
+    -moz-transform:translate3d( -105%, 0, 0 );
+    -moz-transition-duration: .5s;
     -webkit-transform:translate3d( -105%, 0, 0 );
     -webkit-transition-duration: .5s;
 
 }
     #left_slider.animate {
+        -transition:translate3d( 0, 0, 0 );
+        -moz-transform:translate3d( 0, 0, 0 );
         -webkit-transform:translate3d( 0, 0, 0 );
     }
 
 #right_slider {
     right: 0;
     left: auto;
+    -transform:translate3d( 105%, 0, 0 );
+    -transition-duration: 0.5s;
+    -moz-transform:translate3d( 105%, 0, 0 );
+    -moz-transition-duration: .5s;
     -webkit-transform:translate3d( 105%, 0, 0 );
     -webkit-transition-duration: .5s;
 }
     #right_slider.animate {
+        -transition:translate3d( 0, 0, 0 );
+        -moz-transform:translate3d( 0, 0, 0 );
         -webkit-transform:translate3d( 0, 0, 0 );
     }
 
@@ -212,6 +224,7 @@
 }
 
 .project_image {
+    display:none;
     width: 200px;
     padding-top: 20px;
     margin-right: auto;
