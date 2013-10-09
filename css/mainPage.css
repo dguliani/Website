@@ -107,7 +107,8 @@
 .skills {
     display: inline-block;
     width:250px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 360px;
 }
 
@@ -251,13 +252,16 @@
     font-weight: lighter;
 }
 /*--------------LARGE_VIEW--------------*/
-@media screen and ( min-width: 1000px ) {
+@media screen and ( min-width: 1400px ) {
     .skills {
-        margin-left: 50px;
+        width: 400px;
+    }
+    .projects {
+        width: 400px;
     }
 }
 /*--------------MID-SIZE VIEW-----------*/
-@media screen and ( max-width: 850px ) {
+@media screen and ( max-width: 860px ) {
     .projects_small {
         display: block;
     }
