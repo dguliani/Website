@@ -121,6 +121,20 @@
     border-radius: 10px;
     box-shadow: 0px 1px 20px inset;
 }
+.narrow_element {
+    display: block;
+}
+.wide_element {
+    display: none;
+}
+.project_link {
+    color:white;
+    text-decoration: none;
+    font-style: italic;
+}
+    .project_link:hover {
+        font-style: bold;
+    }
 .skills_image {
     height:120px;
     width: 120px;
@@ -258,6 +272,12 @@
     }
     .projects {
         width: 400px;
+    }
+    .wide_element {
+        display: block;
+    }
+    .narrow_element {
+        display:none;
     }
 }
 /*--------------MID-SIZE VIEW-----------*/

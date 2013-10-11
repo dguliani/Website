@@ -36,15 +36,19 @@ mainPage.application = (function()
                     dom.HTML.addClass( rightSlider, "animate" );
             }
             dom.HTML.addClass( coverInner, "show_slider" ); 
-        }
-        parentSlider = getParentByClassName( target, "slide" );
-        if( parentSlider ) {
-            if( parentSlider === leftSlider ) {
-                dom.HTML.removeClass( leftSlider, "animate" );
-            } else if( parentSlider === rightSlider ) {
-                dom.HTML.removeClass( rightSlider, "animate" );
+        } else if( getParentByClassName( target, "project_link" ) ) {
+            e.stopPropagation();
+
+        } else {
+            parentSlider = getParentByClassName( target, "slide" );
+            if( parentSlider ) {
+                if( parentSlider === leftSlider ) {
+                    dom.HTML.removeClass( leftSlider, "animate" );
+                } else if( parentSlider === rightSlider ) {
+                    dom.HTML.removeClass( rightSlider, "animate" );
+                }
+                dom.HTML.removeClass( coverInner, "show_slider" );
             }
-            dom.HTML.removeClass( coverInner, "show_slider" );
         }
 
     };
