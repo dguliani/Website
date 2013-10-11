@@ -132,7 +132,7 @@
     text-decoration: none;
     font-style: italic;
 }
-    .project_link:hover {
+    a.project_link:hover {
         font-style: bold;
     }
 .skills_image {
@@ -197,6 +197,7 @@
     height: 385px;
     width: 100%;
     box-shadow: inset 0px -1px 13px;
+    overflow: hidden;
 }
 #left_slider {
     right: auto;
