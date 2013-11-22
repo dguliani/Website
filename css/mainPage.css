@@ -99,9 +99,9 @@
 }
 #skills_row {
     padding-top: 50px;
-    padding-bottom: 50px;
     height: 360px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .skills {
@@ -348,6 +348,64 @@
     height: 110px;
     width: 100%;
     background-color: rgba( 137, 200, 230, 0.8 );
+}
+
+/*---------------PROJECTS_ROWS----------*/
+.projects_row {
+    height:500px;
+    width:100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display:none;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    -webkit-perspective: 1500;}
+    /* flip the pane when hovered */
+    .flip-container.hover .flipper {
+        -webkit-transform: rotateY(180deg);
+    }
+
+.flip-container {
+    width: 580px;
+    height: 370px;
+}
+.front, .back {
+    width: 290px;
+    height: 370px;
+}
+
+/* flip speed goes here */
+.flipper {
+    -webkit-transition: 0.8s;
+    -webkit-transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    -webkit-backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+
+    background-color: crimson;
+
+}
+
+/* back, initially hidden pane */
+.back {
+    -webkit-transform: rotateY(180deg);
+
+    background-color: gray;
 }
 /*---------------TOPNAV---------------
 #main_container {
