@@ -80,7 +80,7 @@ mainPage.application = (function()
         //TODO change the inner html of elements that require it when size is too large or small
     };
 
-    setSlider = function( viewType )
+   /* setSlider = function( viewType )
     {
         switch( viewType ) {
             case 'projects':
@@ -103,7 +103,7 @@ mainPage.application = (function()
         interestsTab.onclick = function() {
             setSlider( 'interests' );
         };
-    };
+    };*/
     
     initializeSliders = function() {
 
@@ -128,9 +128,9 @@ mainPage.application = (function()
         headerBar = $( 'header' );
         leftSlider = $( 'left_slider' );
         rightSlider = $( 'right_slider' );
-        projectsTab = $( 'projects_tab' );
-        summaryTab = $( 'summary_tab' );
-        interestsTab = $('interests_tab' );
+       // projectsTab = $( 'projects_tab' );
+       // summaryTab = $( 'summary_tab' );
+       // interestsTab = $('interests_tab' );
 
         console.log( "initializing" );
 
@@ -138,7 +138,7 @@ mainPage.application = (function()
         window.onresize = resizeView;
         resizeView();
 
-        bindTabs();
+        //bindTabs();
 
         window.setTimeout( function() {
             initializeSliders();
