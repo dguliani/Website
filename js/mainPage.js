@@ -16,12 +16,8 @@ mainPage.application = (function()
     coverInner,
     leftSlider,
     rightSlider,
-    projectsTab,
-    interestsTab,
-    summaryTab,
 
     //functions
-    bindTabs,
     resizeView,
     getParentByClassName,
     initializeSliders;
@@ -79,31 +75,6 @@ mainPage.application = (function()
 
         //TODO change the inner html of elements that require it when size is too large or small
     };
-
-   /* setSlider = function( viewType )
-    {
-        switch( viewType ) {
-            case 'projects':
-                console.log( 'clicked on projects' ); 
-            case 'summary':
-                console.log( 'clicked on summary' ); 
-            case 'interests':
-                console.log( 'clicked on interests' ); 
-        }
-    }
-
-    bindTabs = function() {
-
-        projectsTab.onclick = function() {
-            setSlider( 'projects' );
-        };
-        summaryTab.onclick = function() {
-            setSlider( 'summary' );
-        };
-        interestsTab.onclick = function() {
-            setSlider( 'interests' );
-        };
-    };*/
     
     initializeSliders = function() {
 
@@ -128,9 +99,6 @@ mainPage.application = (function()
         headerBar = $( 'header' );
         leftSlider = $( 'left_slider' );
         rightSlider = $( 'right_slider' );
-       // projectsTab = $( 'projects_tab' );
-       // summaryTab = $( 'summary_tab' );
-       // interestsTab = $('interests_tab' );
 
         console.log( "initializing" );
 

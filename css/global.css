@@ -71,24 +71,6 @@ li {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/*#nav_bar {
-    display:block;
-    text-align: center;
-    margin: 0px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-}
-
-.topnav {
-    color: rgb(0, 78, 163);
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}*/
-
 #my_photo {
     border-radius: 50px;
     width:100px;
