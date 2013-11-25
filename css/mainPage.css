@@ -27,7 +27,7 @@
 #cover_inner {
     width:100%;
     background-color:  rgb( 61, 61, 61 );    
-    height:385px;
+    height:300px;
    /* box-shadow: inset 0px -1px 13px;
     background-image:url('../images/background_pattern.png');*/
 
@@ -105,7 +105,7 @@
 
 #skills_row {
     padding-top: 50px;
-    height: 360px;
+    height: 340px;
     text-align: center;
 }
 
@@ -114,7 +114,7 @@
     width:250px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 360px;
+    height: 340px;
 }
 
 .projects {
@@ -258,7 +258,7 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid rgb(24, 117, 168);
-    top: 550px;
+    top: 463px;
     position: absolute;
     z-index: 100;
     left: 300px;
@@ -299,7 +299,7 @@
     }
 }
 /*--------------MID-SIZE VIEW-----------*/
-@media screen and ( max-width: 860px ) {
+@media all and ( max-width: 900px ) {
     .projects_small {
         display: block;
     }
@@ -316,6 +316,15 @@
     }
     .projects {
         display:none;
+    }
+    .flip-container {
+        display:block !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+        margin-bottom: 20px;
+    }
+    .projects_row {
+        height: 1080px !important;
     }
 }
 /*-----------NARROW VIEW---------------*/
@@ -348,6 +357,7 @@
     color:white;
     display:inline-block;
     font-size: 1.1em;
+    font-weight: lighter;
 }
 
 #contact_inner {
@@ -358,10 +368,13 @@
 }
 /*---------------PROJECTS_ROWS----------*/
 .projects_row {
-    height:350px;
+    height:365px;
     width:100%;
     text-align: center;
     display:block;
+    padding-top: 45px;
+    background-color: rgba(119, 201, 191, 0.7);
+    border-top: 1px solid rgba(136, 136, 136, 0.8);
 }
 
 /* entire container, keeps perspective */
@@ -414,7 +427,8 @@
 /* back, initially hidden pane */
 .back {
     -webkit-transform: rotateY(180deg);
-    background-color:rgba( 71, 67, 50, 1 );
+    background-color:rgba( 255, 255, 255, 1 );
+    box-shadow: 0px 0px 1px rgb( 1,1,1 );
 }
 /*---------------TOPNAV---------------
 #main_container {
