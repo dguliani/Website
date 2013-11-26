@@ -6,7 +6,7 @@ html, body {
 	padding:none;
 	margin: 0px;
     overflow-x: hidden;
-
+    font-family: font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 h1{
@@ -25,6 +25,9 @@ h2 {
 li {
     padding-top: 13px;
     text-align: left; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-bottom: 1px solid rgba(145, 145, 145, 0.9);
+    list-style-type: none;
 }
 /*----------TOPNAV and HEADER ---------*/
 #header {
@@ -43,7 +46,7 @@ li {
     text-align: center;
     font-style: normal;
     font-size: 3.3em;
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .photo,
 #header_content {
@@ -59,16 +62,6 @@ li {
 }
 #header_content {
     width: 100%;
-}
-#slogan{
-    opacity:0.7;
-    text-align: center;
-    display:block;
-    margin-top:0px;
-    margin-bottom: 8px;
-    color:white;
-    font-style:italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #my_photo {

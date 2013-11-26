@@ -297,6 +297,11 @@
     .narrow_element {
         display:none;
     }
+    .flip-container {
+        margin-left:80px !important;
+        margin-right:80px !important;
+        margin-bottom: 20px;
+    }
 }
 /*--------------MID-SIZE VIEW-----------*/
 @media all and ( max-width: 900px ) {
@@ -308,7 +313,8 @@
         display: block;
     }
     #skills_row {
-        height: 1080px;
+        height: 985px;
+        padding-top: 25px;
     }
 
     #cover_text {
@@ -324,7 +330,7 @@
         margin-bottom: 20px;
     }
     .projects_row {
-        height: 1080px !important;
+        height: 910px !important;
     }
 }
 /*-----------NARROW VIEW---------------*/
@@ -373,8 +379,14 @@
     text-align: center;
     display:block;
     padding-top: 45px;
-    background-color: rgba(119, 201, 191, 0.7);
     border-top: 1px solid rgba(136, 136, 136, 0.8);
+}
+
+.technical {
+    height: 305px;
+    background-color: rgba(213, 213, 213, 0.7);
+}
+.non-technical {
 }
 
 /* entire container, keeps perspective */
@@ -429,6 +441,22 @@
     -webkit-transform: rotateY(180deg);
     background-color:rgba( 255, 255, 255, 1 );
     box-shadow: 0px 0px 1px rgb( 1,1,1 );
+}
+
+.back ul {
+    padding-left: 0;
+}
+.back li {
+    padding-left: 15px;
+}
+.back a {
+    text-decoration: none;
+}
+
+.back a li {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
 }
 /*---------------TOPNAV---------------
 #main_container {
