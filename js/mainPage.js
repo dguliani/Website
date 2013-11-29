@@ -100,6 +100,10 @@ mainPage.application = (function()
         leftSlider = $( 'left_slider' );
         rightSlider = $( 'right_slider' );
 
+        $('overlay_button').onclick = function( e ) {
+            dom.HTML.removeClass( document.body, 'showOverlay' );
+        }
+
         console.log( "initializing" );
 
         window.onclick = onClick;
