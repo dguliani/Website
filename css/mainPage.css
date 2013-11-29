@@ -147,7 +147,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .skill_title {
@@ -423,7 +423,7 @@
 }
 /*---------------PROJECTS_ROWS----------*/
 .projects_row {
-    height:365px;
+    height:390px;
     width:100%;
     text-align: center;
     display:block;
@@ -431,12 +431,23 @@
     border-top: 1px solid rgba(136, 136, 136, 0.8);
 }
 
+<<<<<<< Updated upstream
 .technical {
     height: 305px;
     background-color: rgba(213, 213, 213, 0.7);
 }
 .non-technical {
     background-color:rgba(202, 203, 214, 0.8);
+}
+.projects_row h1 {
+    padding: 0;
+    margin: auto;
+    color:white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-weight: 100;
+    font-style: normal;
+    padding-top: 110px;
+    width: 100%;
 }
 
 /* entire container, keeps perspective */
@@ -454,11 +465,11 @@
 
 .flip-container {
     width: 250px;
-    height: 250px;
+    height: 275px;
 }
 .front, .back {
     width: 250px;
-    height: 250px;
+    height: 275px;
     border-radius: 15px;
 }
 
