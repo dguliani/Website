@@ -210,9 +210,12 @@
     text-align: center;
 }
 
+#overlay_background {
+    overflow: hidden;
+    height: 100%;
+}
 #overlay_image {
-    height:835px;
-    width:1000px;
+    width:880px;
     margin: auto;
     display: inline-block;
 }
@@ -221,7 +224,7 @@
     display:inline-block;
     color: white;
     position:absolute;
-    top: 120px;
+    top: 50px;
     z-index: 1000;
     width: 100%;
     left: 0;
@@ -230,7 +233,7 @@
     color: white !important;
     font-style: normal;
     font-weight: lighter;
-    font-size: 6em;
+    font-size: 5em;
     line-height: 1em;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -238,9 +241,14 @@
 }
 #overlay_text h2 {
     margin-top: 0;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-family: Impact, Charcoal, sans-serif;
     line-height:1em;
-    font-size: 3em;
+    font-size: 2.3em;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(133, 40, 177);
 }
 /*------------FOOTER----------------*/
 
