@@ -50,7 +50,7 @@ mainPage.application = (function()
         bodyContainer = $( 'body_container' );
         coverInner = $( 'cover_inner' );
 
-        $('overlay_button').onclick = function( e ) {
+        $('overlay_hide').onclick = function( e ) {
             dom.HTML.removeClass( document.body, 'showOverlay' );
         }
 
