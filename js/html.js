@@ -1,6 +1,6 @@
 var dom = dom || {};
 
-dom.HTML = ( function() {
+dom.HTML = (function() {
 
 	var HTML = {};
 

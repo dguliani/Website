@@ -13,10 +13,14 @@ mainPage.application = (function()
     //elements
     mainContainer,
     coverInner,
+    imageSlider,
 
     //functions
     resizeView,
-    getParentByClassName;
+    getParentByClassName,
+    evaluatePortrait;
+
+    application.isPortrait;
       
     onClick = function( e ) 
     {
@@ -33,14 +37,31 @@ mainPage.application = (function()
         }
         return null; 
     };
-      
+    
+    evaluatePortrait = function( pageWidth ) {
+
+        if( pageWidth < 700 ) {
+            return true;
+        } 
+        return false;
+    };
+
     resizeView = function( e ) {
 
         var availableHeight = window.innerHeight,
             bodyHeight = bodyContainer.offsetHeight,
             bodyWidth = bodyContainer.offsetWidth;
             tabLeft = bodyWidth;
+    
+        application.isPortrait = evaluatePortrait( bodyWidth );
 
+        if( application.isPortrait ) {
+            $( 'contact_line' ).innerHTML = "For more information, please see my ";
+        } else {
+             $( 'contact_line' ).innerHTML = "To learn about my qualifications and for my contact information, see my ";
+        }
+
+        //TODO change the number of images in the slider
         //TODO change the inner html of elements that require it when size is too large or small
     };
 
@@ -49,6 +70,7 @@ mainPage.application = (function()
         mainContainer = $( 'main_container' );
         bodyContainer = $( 'body_container' );
         coverInner = $( 'cover_inner' );
+        imageSlider = $( 'sliderFrame' );
 
         $('overlay_hide').onclick = function( e ) {
             dom.HTML.removeClass( document.body, 'showOverlay' );

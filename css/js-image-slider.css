@@ -9,6 +9,12 @@
     background:#191919;
     border:1px solid #066;
     border-radius:6px;
+    position: absolute;
+    top: 0;
+    z-index:100;
+    display:none;
+    -webkit-transform: translate3d( 0, -105%, 0 );
+    -webkit-transition: -webkit-transform .2s;
 } 
 
 #slider, #slider div.sliderInner {
