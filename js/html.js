@@ -2,7 +2,7 @@ var dom = dom || {};
 
 dom.html = (function() {
 
-	var HTML = {};
+	var html = {};
 
 	html.hasClass = function( element, className ) 
 	{
@@ -67,5 +67,5 @@ dom.html = (function() {
 		return domElement;
 	};
 
-	return HTML;
+	return html;
 }());
