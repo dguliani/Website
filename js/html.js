@@ -1,17 +1,17 @@
 var dom = dom || {};
 
-dom.HTML = (function() {
+dom.html = (function() {
 
 	var HTML = {};
 
-	HTML.hasClass = function( element, className ) 
+	html.hasClass = function( element, className ) 
 	{
 		var currentClassName,
 			splitClassName, 
 			i;
 
-		existingClassName = element.className || '';
-		splitClassName = existingClassName.split( ' ' );
+		currentClassName = element.className || '';
+		splitClassName = currentClassName.split( ' ' );
 		for( i = splitClassName.length - 1; i >= 0; i-- ) {
 			if( splitClassName[ i ] === className ){
 				return true;
@@ -20,7 +20,7 @@ dom.HTML = (function() {
 		return false;
 	};
 
-	HTML.addClass = function( element, className ) 
+	html.addClass = function( element, className ) 
 	{
 		var currentClassName;
         
@@ -32,7 +32,7 @@ dom.HTML = (function() {
 
 	};
 
-	HTML.removeClass = function( element, className ) 
+	html.removeClass = function( element, className ) 
 	{
 		var currentClassName,
 			splitClassName,
@@ -48,6 +48,23 @@ dom.HTML = (function() {
 				}
 			}
 		
+	};
+
+	html.create = function( elementType, id, className, innerHTML )
+	{
+		var domElement = document.createElement( elementType );
+
+		if( id ) {
+			domElement.id = id;
+		}
+		if( className ) {
+			domElement.className = id;
+		}
+		if( innerHTML ) {
+			domElement.innerHTML = innerHTML;
+		}
+
+		return domElement;
 	};
 
 	return HTML;

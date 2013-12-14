@@ -29,10 +29,10 @@ mainPage.application = (function()
 
     getParentByClassName = function( element, className ) 
     {
-        while( !dom.HTML.hasClass( element, className ) && !dom.HTML.hasClass( element, "main_page" ) ) {
+        while( !dom.html.hasClass( element, className ) && !dom.html.hasClass( element, "main_page" ) ) {
             element = element.parentElement;
         }
-        if( dom.HTML.hasClass( element, className ) ) {
+        if( dom.html.hasClass( element, className ) ) {
             return element;
         }
         return null; 
@@ -73,7 +73,7 @@ mainPage.application = (function()
         imageSlider = $( 'sliderFrame' );
 
         $('overlay_hide').onclick = function( e ) {
-            dom.HTML.removeClass( document.body, 'showOverlay' );
+            dom.html.removeClass( document.body, 'showOverlay' );
         }
 
         console.log( "initializing" );
