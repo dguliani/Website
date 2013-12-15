@@ -24,7 +24,7 @@ dom.html = (function() {
 	{
 		var currentClassName;
         
-        if( HTML.hasClass( element, className ) ) {
+        if( html.hasClass( element, className ) ) {
             return;
         }
         currentClassName = element.className || '';
@@ -49,6 +49,17 @@ dom.html = (function() {
 			}
 		
 	};
+
+    html.getParentByClassName = function( element, className ) 
+    {
+        while( !dom.html.hasClass( element, className ) ) {
+            element = element.parentElement;
+        }
+        if( dom.html.hasClass( element, className ) ) {
+            return element;
+        }
+        return null; 
+    };
 
 	html.create = function( elementType, id, className, innerHTML )
 	{

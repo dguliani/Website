@@ -24,18 +24,15 @@ mainPage.application = (function()
       
     onClick = function( e ) 
     {
-        //TODO handle future click events
-    };
+       /* var target = e.target,
+            popupInvoker;
 
-    getParentByClassName = function( element, className ) 
-    {
-        while( !dom.html.hasClass( element, className ) && !dom.html.hasClass( element, "main_page" ) ) {
-            element = element.parentElement;
-        }
-        if( dom.html.hasClass( element, className ) ) {
-            return element;
-        }
-        return null; 
+        popupInvoker = dom.html.getParentByClassName( target,  'popup_invoker' );
+        if( popupInvoker ) {
+
+        } */
+
+        //TODO handle future click events
     };
     
     evaluatePortrait = function( pageWidth ) {
@@ -74,6 +71,15 @@ mainPage.application = (function()
 
         $('overlay_hide').onclick = function( e ) {
             dom.html.removeClass( document.body, 'showOverlay' );
+        }
+
+        $( 'images_link').onclick = function( e ) {
+            dom.html.addClass( document.body, 'showPopup' );
+            e.stopPropagation();
+        }
+
+        $( 'popup_overlay' ).onclick = function( e ) {
+            dom.html.removeClass( document.body, 'showPopup' );
         }
 
         console.log( "initializing" );
