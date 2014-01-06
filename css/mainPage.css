@@ -73,8 +73,8 @@
     border: none;
     box-shadow: 0px 1px 1px;
     border-radius: 3px;
-    font-weight: bold;
-    font-size: 13px;
+    font-weight: normal;
+    font-size: 1em;
     background-color: white;
 }
 
@@ -424,17 +424,17 @@
 
 /*--------------CONTACT_ROW------------*/
 #contact_row {
-    height: 90px;
+    height: 75px;
     width: 100%;
-    background-color: rgba(10, 28, 36, 0.8);
+    background-color: rgba(95, 200, 247, 0.8);
     text-align: center;
     display: table;
 }
 #contact_row p {
     font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
-    color:white;
+    color:black;
     display:inline-block;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: lighter;
 }
 
